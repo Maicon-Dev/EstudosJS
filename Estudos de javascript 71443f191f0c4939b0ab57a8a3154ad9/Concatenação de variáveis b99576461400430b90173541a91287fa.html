@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Estudos de javascript</title><style>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Concatenação de variáveis</title><style>
 /* cspell:disable-file */
 /* webkit printing magic: print all background colors */
 html {
@@ -633,4 +633,23 @@ blockquote {
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 }
 	
-</style></head><body><article id="71443f19-1f0c-4939-b0ab-57a8a3154ad9" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📝</span></div><h1 class="page-title">Estudos de javascript</h1></header><div class="page-body"><ul id="75253b76-118a-44aa-a08a-21546783d7e4" class="toggle"><li><details open=""><summary>Variáveis</summary><ul id="d2f99071-aa06-4134-b96d-e46f43dc655d" class="toggle"><li><details open=""><summary>Declarações</summary><figure id="aabb4e7c-02f4-487b-a587-c37e05f1aa8b" class="link-to-page"><a href="Estudos%20de%20javascript%2071443f191f0c4939b0ab57a8a3154ad9/Tipo%20var%20aabb4e7c02f4487ba587c37e05f1aa8b.html">Tipo var</a></figure><figure id="c39f61d0-89b2-4466-89cc-a0e35c21cec3" class="link-to-page"><a href="Estudos%20de%20javascript%2071443f191f0c4939b0ab57a8a3154ad9/Tipo%20let%20c39f61d089b2446689cca0e35c21cec3.html">Tipo let</a></figure><figure id="6c63d361-894a-4624-a7d0-0b7fb8250671" class="link-to-page"><a href="Estudos%20de%20javascript%2071443f191f0c4939b0ab57a8a3154ad9/Tipo%20const%206c63d361894a4624a7d00b7fb8250671.html">Tipo const</a></figure></details></li></ul><figure id="b9957646-1400-430b-9017-3541a91287fa" class="link-to-page"><a href="Estudos%20de%20javascript%2071443f191f0c4939b0ab57a8a3154ad9/Concatenac%CC%A7a%CC%83o%20de%20varia%CC%81veis%20b99576461400430b90173541a91287fa.html">Concatenação de variáveis</a></figure></details></li></ul><ul id="45bf73ad-e202-404b-8f32-da9eec34f61b" class="toggle"><li><details open=""><summary>Objeto</summary><figure id="eb61fba7-bacb-4623-a9ac-b3bd68df6081" class="link-to-page"><a href="Estudos%20de%20javascript%2071443f191f0c4939b0ab57a8a3154ad9/Funcionamento%20eb61fba7bacb4623a9acb3bd68df6081.html">Funcionamento</a></figure></details></li></ul><ul id="fd43d4f5-1f39-49ba-8234-0564eff0bce2" class="toggle"><li><details open=""><summary>Array</summary><figure id="7c2184ee-ca13-4a45-80f5-223ed8253687" class="link-to-page"><a href="Estudos%20de%20javascript%2071443f191f0c4939b0ab57a8a3154ad9/Funcionamento%207c2184eeca134a4580f5223ed8253687.html">Funcionamento</a></figure></details></li></ul></div></article></body></html>
+</style></head><body><article id="b9957646-1400-430b-9017-3541a91287fa" class="page sans"><header><h1 class="page-title">Concatenação de variáveis</h1></header><div class="page-body"><p id="5b7df203-8d6f-4e28-b5be-8af52bfb4b5c" class="">Ao decorrer do processo de desenvolvimento pode ocorrer a necessidade de imprimir os valores dessas variáveis combinadas com textos e para esses casos teremos que concatenar os textos com os valores das variáveis. Utilizarei aqui dois métodos, a concatenação mais simples utilizando o <code>+</code> entre textos e variáveis e utilizando <em>template string.</em></p><p id="29646e21-8122-4edb-9c77-a219ff914386" class="">
+</p><h2 id="ca223017-8983-45e1-8703-93a306562ed5" class="">Método mais comum</h2><pre id="0db1e668-0f0b-491f-ae37-519ecc0074b0" class="code code-wrap"><code>&lt;script&gt;
+	var name = &quot;Maicon&quot;
+	var age = 23
+
+	console.log(&quot;Olá, meu nome é &quot; + name + &quot; e tenho &quot; + age + &quot; anos!&quot;)
+&lt;/script&gt;</code></pre><p id="f8a26c7e-d489-4dbf-80f5-3e39616fa478" class="">Perceba que usei as variáveis para exibir os seus valores, o resultado neste caso seria algo assim: <code>Olá, meu nome é Maicon e tenho 23 anos!</code></p><p id="64c2d448-9ce6-452f-bc14-ffe282621da6" class="">Há também como utilizar a <code>,</code> (virgula) no lugar do <code>+</code> para concatenar, segue o exemplo:</p><pre id="a98ef5db-1885-4ae2-8909-8a5424842c2a" class="code code-wrap"><code>&lt;script&gt;
+	var name = &quot;Maicon&quot;
+	var age = 23
+
+	console.log(&quot;Olá, meu nome é&quot;, name, &quot;e tenho&quot;, age, &quot;anos!&quot;)
+&lt;/script&gt;</code></pre><p id="0784620a-0ec7-4edf-bb60-eb38d26f2a59" class="">O resultado será: <code>Olá, meu nome é Maicon e tenho 23 anos!</code></p><p id="104de2d4-5f60-4b23-b6d0-aee0fd244f8c" class="">
+</p><h2 id="a11639da-0cc9-446f-937f-682b53099c45" class="">Utilizando <em>template string</em></h2><pre id="fa4c82e5-a3fb-49a0-93f4-0fa99ca1f682" class="code code-wrap"><code>&lt;script&gt;
+	var name = &quot;Maicon&quot;
+	var age = 23
+
+	console.log(`Olá, meu nome é ${name} e tenho ${age} anos!`)
+&lt;/script&gt;</code></pre><p id="63d98c34-4343-44e4-b6a3-b5fc4069dc38" class="">O resultado será: <code>Olá, meu nome é Maicon e tenho 23 anos!
+</code>Esse é particularmente meu método preferido. 
+É importante citar que o uso de crase para esse método é essencial. Nesse caso para referenciar a variável é utilizado o <code>${variável}</code> e funciona bem como um template mesmo, uma vez que você tem uma informação visual de como irá ficar reservando um espaço para sua variável.</p></div></article></body></html>
