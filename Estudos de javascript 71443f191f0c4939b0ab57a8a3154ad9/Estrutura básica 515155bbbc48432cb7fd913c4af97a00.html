@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Estudos de javascript</title><style>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Estrutura básica</title><style>
 /* cspell:disable-file */
 /* webkit printing magic: print all background colors */
 html {
@@ -633,4 +633,52 @@ blockquote {
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 }
 	
-</style></head><body><article id="71443f19-1f0c-4939-b0ab-57a8a3154ad9" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📝</span></div><h1 class="page-title">Estudos de javascript</h1></header><div class="page-body"><ul id="75253b76-118a-44aa-a08a-21546783d7e4" class="toggle"><li><details open=""><summary>Variáveis</summary><ul id="d2f99071-aa06-4134-b96d-e46f43dc655d" class="toggle"><li><details open=""><summary>Declarações</summary><figure id="aabb4e7c-02f4-487b-a587-c37e05f1aa8b" class="link-to-page"><a href="Estudos%20de%20javascript%2071443f191f0c4939b0ab57a8a3154ad9/Tipo%20var%20aabb4e7c02f4487ba587c37e05f1aa8b.html">Tipo var</a></figure><figure id="c39f61d0-89b2-4466-89cc-a0e35c21cec3" class="link-to-page"><a href="Estudos%20de%20javascript%2071443f191f0c4939b0ab57a8a3154ad9/Tipo%20let%20c39f61d089b2446689cca0e35c21cec3.html">Tipo let</a></figure><figure id="6c63d361-894a-4624-a7d0-0b7fb8250671" class="link-to-page"><a href="Estudos%20de%20javascript%2071443f191f0c4939b0ab57a8a3154ad9/Tipo%20const%206c63d361894a4624a7d00b7fb8250671.html">Tipo const</a></figure></details></li></ul><figure id="b9957646-1400-430b-9017-3541a91287fa" class="link-to-page"><a href="Estudos%20de%20javascript%2071443f191f0c4939b0ab57a8a3154ad9/Concatenac%CC%A7a%CC%83o%20de%20varia%CC%81veis%20b99576461400430b90173541a91287fa.html">Concatenação de variáveis</a></figure></details></li></ul><ul id="45bf73ad-e202-404b-8f32-da9eec34f61b" class="toggle"><li><details open=""><summary>Objeto</summary><figure id="eb61fba7-bacb-4623-a9ac-b3bd68df6081" class="link-to-page"><a href="Estudos%20de%20javascript%2071443f191f0c4939b0ab57a8a3154ad9/Funcionamento%20eb61fba7bacb4623a9acb3bd68df6081.html">Funcionamento</a></figure></details></li></ul><ul id="fd43d4f5-1f39-49ba-8234-0564eff0bce2" class="toggle"><li><details open=""><summary>Array</summary><figure id="7c2184ee-ca13-4a45-80f5-223ed8253687" class="link-to-page"><a href="Estudos%20de%20javascript%2071443f191f0c4939b0ab57a8a3154ad9/Funcionamento%207c2184eeca134a4580f5223ed8253687.html">Funcionamento</a></figure></details></li></ul><ul id="6ebc5d3e-7287-4ca4-b529-1b1c566e201a" class="toggle"><li><details open=""><summary>Funções</summary><figure id="515155bb-bc48-432c-b7fd-913c4af97a00" class="link-to-page"><a href="Estudos%20de%20javascript%2071443f191f0c4939b0ab57a8a3154ad9/Estrutura%20ba%CC%81sica%20515155bbbc48432cb7fd913c4af97a00.html">Estrutura básica</a></figure></details></li></ul></div></article></body></html>
+</style></head><body><article id="515155bb-bc48-432c-b7fd-913c4af97a00" class="page sans"><header><h1 class="page-title">Estrutura básica</h1></header><div class="page-body"><h3 id="f2110653-fe05-4259-ba1c-4dd5bf4158f8" class="">Função padrão</h3><pre id="9d34c852-57c0-4a51-acac-6bd12ca02358" class="code code-wrap"><code>&lt;script&gt;
+	//DECLARAÇÃO DA FUNCAO
+	function nomeDaFuncao(parametros) {
+		// do something
+	}
+
+	//CHAMADA DA FUNCAO
+	nomeDaFuncao(argumentos)
+&lt;/script&gt;</code></pre><p id="a7320303-a487-48eb-8d11-b0155e2ca78b" class="">Uma função é um agrupamento de código que serão executados a uma chamada. Por exemplo você possui um código que soma 2 números e toda vez que você quiser exibir uma soma com números diferentes você escreve tudo novamente e coloca outros números. Você concorda que o código é o mesmo para realizar a soma e que se puder receber os números iria economizar linhas?
+Deixado de escrever assim:</p><pre id="3745f932-170e-40fd-a78d-09efda8ba27c" class="code code-wrap"><code>&lt;script&gt;
+	console.log(1 + 1)
+	console.log(1 + 3)
+	console.log(1 + 5)
+&lt;/script&gt;</code></pre><p id="6c7812f2-370d-4c79-b128-930b57310a5c" class="">E passando a escrever assim:</p><pre id="ff72dbbc-ede9-4fb1-a198-34733266a1b5" class="code code-wrap"><code>&lt;script&gt;
+	//numero1 e numero2 aqui são chamados de parametros
+	//ele irá receber os valores passados na chamada
+	function soma(numero1, numero2) {
+		console.log(numero1, numero2)
+	}
+	
+	//os valores passados aqui são chamados de argumentos
+	//Eles serão passados para o parametro da função
+	//nem toda funcao tem argumentos e parametros
+	soma(1 + 1)
+	soma(1 + 3)
+	soma(1 + 5)
+&lt;/script&gt;</code></pre><p id="3270eb48-6972-4346-81bf-409e40ebf979" class="">Bem, você pode estar pensando agora, &quot;ué, mas são mais linhas. O objetivo não era simplificar?&quot;. E de fato, nesse caso, nós só teremos o objetivo de dar o significado a expressão e o objetivo didático para fixar a sintaxe das funções. Mas e se em vez de apenas somar 2 números quiséssemos uma função para calcular a fórmula de Bhaskara? (considerando apenas deltas positivos)</p><p id="a4bbd29c-9db0-4ec1-b43e-6182bd41ca48" class="">Teríamos sem função algo assim:</p><pre id="4f31b5f5-a64e-437e-99ed-8d92948765dd" class="code code-wrap"><code>&lt;script&gt;
+	//para a equação abaixo
+	//x² + x - 6
+	
+	let delta = 1**2 - 4*1*(-6)
+	console.log((-1 + delta ** ( 1/2 )) / 2 * 1)
+	console.log((-1 - delta ** ( 1/2 )) / 2 * 1)
+&lt;/script&gt;</code></pre><p id="997b45a8-7f77-46b5-a36b-2e1810bdb4d0" class="">Agora imagine que se eu troco os valores de a, b e c da fórmula 3x eu teria 9 linhas? E se escrevesse 4, 5, 12, 20? o código seria enorme e com a mesma fórmula, então usar a função além de dar um significado para esse amontoado de código, economizaria códigos, veja.</p><pre id="b78df804-184b-44f8-a8b8-10a96990dd90" class="code code-wrap"><code>&lt;script&gt;
+	//a, b e c são as varáveis usadas comumente na fórmula
+	function baskhara(a, b, c) {
+		let delta = b**2 - 4*a*c
+		console.log(&quot;x&#x27;: &quot;, (-b + delta ** ( 1/2 )) / 2 * a)
+		console.log(&#x27;x&quot;: &#x27;, (-b - delta ** ( 1/2 )) / 2 * a)
+	}
+
+	baskhara(1, 1, -6)
+&lt;/script&gt;</code></pre><p id="4369f0c2-e6d1-4f35-b21c-1d2e79fc523f" class="">E utilizando da função, não importa quantas vezes eu a queira chamar, só preciso chamar a função e passar como argumento os valores de a, b e c da função.</p><h3 id="797fce5f-6ef0-4b54-9681-05c673b91991" class="">Função expressão ou anonima</h3><p id="dc7ecb6c-902c-4472-84ef-9eb9783db87c" class="">Há também uma outra form de escrever funções, as chamadas funções anonimas. Veja a segui um exemplo:</p><pre id="6a510606-9b8f-46a6-8135-bf6456148155" class="code code-wrap"><code>&lt;script&gt;
+	const sum = function(numero1, numero2) {
+		return numero1 + numero2
+	}
+
+	somar(1, 1)
+&lt;/script&gt;</code></pre><p id="4bee6651-2e03-4ae6-a58d-164ee72c87be" class="">Perceba que apesar de ser declarada de forma diferente o uso permanece o mesmo para a chamada.</p></div></article></body></html>
